@@ -1,5 +1,5 @@
 # Kuzniatsova Olga
-![Photo](/https://files.fm/thumb_show.php?i=9kqptatgt "my photo")
+![img](D:\ФОТО\2021 лето\IMG_20210712_163856 "my photo")
 ## My Contact Info:
 * Phone: +375 29 302-13-99
 * E-mail kuz0lga@yandex.ru
