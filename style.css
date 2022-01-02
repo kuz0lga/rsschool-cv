@@ -16,10 +16,15 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
       }
       .section {
-        width: 70%;
+        width: 100%;
+        padding: 0 50px;
                 }
+      .rigth {
+        width: 70%;
+      }
         
         @media (max-width: 768px) {
             .section {
@@ -33,6 +38,13 @@ body {
           align-items: center;
           list-style: none;
           }
+
+ .links { display: flex;
+           flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            list-style: none;
+            }
       
 html {
         scroll-behavior: smooth; 
@@ -40,13 +52,43 @@ html {
 .nav-link { padding: 0 20px;
             line-height: 50px;}
 
-  
-body {min-height: 100vh; margin: 0; padding: 0;}
+.links-footer { padding: 0 20px;
+  line-height: 50px;}
+
+.left {padding: 0 30px;}
+.rigth {padding: 0 30px;}
+body {min-height: 100vh; margin: 0; padding: 0;
+}
 
 body {font-family: 'Lato', sans-serif;
       font-family: 'Merriweather', serif;
       font-family: 'Roboto', sans-serif;
       font-family: 'Ubuntu', sans-serif;}
-      .header {border: 1px solid red}
-      .main {border: 1px solid rgb(67, 14, 117)}
-      .footer {border: 1px solid rgb(23, 100, 27)}
+      
+.body { background-image: url("./assets/img/background.jpg");
+  background-size: contain;
+  
+  width: 1240px; border: 2px solid rgb(71, 71, 71);
+   margin-left: auto;
+   margin-right: auto;}
+
+.nav-link {text-decoration: none;
+  color: #fefffe;
+  transition: color 0.5s;}
+  .nav-link:hover {
+    color: #000000;
+  }
+.link {text-decoration: none;
+color: rgb(0, 0, 0);
+transition: color 0.5s;}
+.link:hover {color: rgb(99, 253, 52);}
+
+.header {background-color: slategrey}
+.avatar {border-radius:50px;}
+.footer {background-color: slategrey }
+.section {border: solid; border-width: 0px 0px 3px 0px;
+font-size: 18px;}
+
+.section-title-name {font-size: 36px;}
+.section-title {color: rgb(255, 255, 255);
+background-color: slategrey;}
