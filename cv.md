@@ -5,7 +5,7 @@
 * GitHub: [kuz0lga](https://github.com/kuz0lga)
 * Discord: [kuz0lga](https://discord.com/channels/516715744646660106/920695268998021231)
 ## About Me
-I am 37 years old. I work as a main architect and design various buildings. I've always liked programming. I independently studied the basic level of the languages C# and Java. I'm studying JS and English  now. I want to try the work of a frontend developer.
+I am 38 years old. I work as a main architect and design various buildings. I've always liked programming. I independently studied the basic level of the languages C# and Java. I'm studying JS and English  now. I want to try the work of a frontend developer.
 My strengths:
 * I am clever
 * I am a fast learner
@@ -18,18 +18,24 @@ My strengths:
 * Version control: Git (remote service GitHub)
 ## Code examples
 ```
-<style>
-  .border
-   {
-    border: 1px solid #111111;
+function solution(number){
+  let a = 0;
+  if (number <= 0) {return 0;}
+  else {
+    for (let i = 1; i < number; i++) {
+         if (i % 3 === 0 || i % 5 === 0) {
+              a = a + i;
+         }
     }
-  #no-border {
-      border-style: none;
-      }
-</style>
+    return a;
+  }
+}
 
-<p class="border" id="no-border">Welcom</p>
 ```
+## Work experience: 
+* Architect 2007 - 2014
+* Main architect 2014 - present
+I didn’t work as a programmer, I study at rs-school
 ## Education and courses:
 1. HTML for beginners ([https://ru.code-basics.com/languages/html])
 2. CSS for beginners ([https://ru.code-basics.com/languages/html])
