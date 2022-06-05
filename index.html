@@ -79,19 +79,20 @@
 
                     <section class="section" id="code">
                         <h2 class="section-title">Code examples</h2>
-                        <pre><code>
-                            <<span>style</span>>
-                                .border
-                                 {
-                                  border: 1px solid #111111;
+                        <code>
+                            function solution(number){
+                                let a = 0;
+                                if (number <= 0) {return 0;}
+                                else {
+                                  for (let i = 1; i < number; i++) {
+                                       if (i % 3 === 0 || i % 5 === 0) {
+                                            a = a + i;
+                                       }
                                   }
-                                #no-border {
-                                    border-style: none;
-                                    }
-                            <<span>/style</span>>
-                              
-                             <<span> p class="border" id="no-border">Welcom</p</span>>
-                        </pre></span></code>                
+                                  return a;
+                                }
+                              }
+                        </code>                
                     </section>
 
                     <section class="section" id="courses">
