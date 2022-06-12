@@ -1,102 +1,122 @@
+body {font-family: 'Abril Fatface', cursive;
+  font-family: 'Joan', serif;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 19px;
+}
+
+h1 {font-size: 32px; font-weight: 700;
+text-align: center;
+color:black;}
+
 * {
   box-sizing: border-box;
 }
+
+body {min-height: 100vh;
+  margin: 0; padding: 0;
+  background-image: url(assets/img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-        }
-   
-  .main-cont {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-    }
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  html {
+    scroll-behavior: smooth; 
+  }
+
+  .nav-list {
+    list-style: none;    
+  }
+
+  .nav-link {
+    padding: 0 20px;
+    line-height: 50px;    
+    font-size: 20px;    
+    font-weight:700;
+    color: #280A04;
+    text-decoration: none;
+    transition: color 1s;}
+
+  .nav-link:hover {color: #cabf25;}
+
+  .main-container {
+    display: flex;
+    flex-direction: row; 
+    
+  }
+  
+  .main-left {
+    width: 35%;
+    background-image: url(assets/img/background-main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    border: 1px solid rgb(53, 49, 13);
+    color: white;
+    padding: 30px;
+  }  
+
+  .main-right {
+    width: 75%;
+    background-color:rgb(255, 255, 255);
+    border: 3px solid rgb(53, 49, 13);
+    padding: 30px;
+  }
+
+  @media (max-width: 768px) {
     .section {
       width: 100%;
-      padding: 0 50px;
-              }
-    .rigth {
-      width: 70%;
     }
-      
-      @media (max-width: 768px) {
-          .section {
-            width: 100%;
-          }
-      }
-  
+  }
 
-.nav-list { display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        list-style: none;
-        }
+  .contact-link {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+  }
+  .contact-link:hover {
+    color: rgb(19, 8, 6);
+  }
 
-.links { display: flex;
-         flex-direction: row;
-          justify-content: flex-end;
-          align-items: center;
-          list-style: none;
-          }
+  .href-link {text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;}
+  .href-link:hover {
+    color: turquoise;
+  }
+
+  .section {border: solid; border-width: 0px 0px 3px 0px;
+    font-size: 18px;}
+
+  .my-photo {
+  padding: 0px 0px 0px 70px;
+  }
+
+  .container-footer {display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; }
+
+  .icon1 {padding: 20px;
+  width: 100px;
+}
+
+.icon2 {padding: 20px;
+  width: 200px;
+}
     
-html {
-      scroll-behavior: smooth; 
-     }
-.nav-link { padding: 0 20px;
-          line-height: 50px;}
-
-.links-footer { padding: 0 20px;
-line-height: 50px;}
-
-.left {padding: 0 30px;}
-.rigth {padding: 0 30px;}
-body {min-height: 100vh; margin: 0; padding: 0;
-}
-
-body {font-family: 'Lato', sans-serif;
-    font-family: 'Merriweather', serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Ubuntu', sans-serif;}
-    
-.body { background-image: url("./assets/img/background.jpg");
-background-size: contain;
-width: 1240px; border: 2px solid rgb(71, 71, 71);
-margin-left: auto;
-margin-right: auto;}
-
-.left {background-image: url("./assets/img/background-main.jpg");}
-
-.nav-link {text-decoration: none;
-color: #fefffe;
-transition: color 0.5s;}
-.nav-link:hover {
-  color: #000000;
-}
-.link {text-decoration: none;
-color: rgb(0, 0, 0);
-transition: color 0.5s;}
-.link:hover {color: rgb(99, 253, 52);}
-
-.header {background-color: slategrey}
-.avatar {border-radius:50px;}
-.footer {background-color: slategrey }
-.section {border: solid; border-width: 0px 0px 3px 0px;
-font-size: 18px;}
-
-.section-title-name {font-size: 42px;
-font-weight: 900;
-}
-
-.section-title {color: rgb(255, 255, 255);
-background-color: slategrey;
-border-radius: 15px;
-font-size: 24px;
-font-weight: 500;
-letter-spacing: 2px;}
