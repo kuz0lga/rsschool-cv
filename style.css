@@ -80,9 +80,12 @@ body {
   }
 
   @media (max-width: 768px) {
-    .section {
-      width: 100%;
+    .main-container {
+      display: flex;
+      flex-direction: column;
     }
+    .main-left {width: 100%;}
+    .main-right {width: 100%;}
   }
 
   .contact-link {
