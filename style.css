@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; 
+} 
+
+h1 {
+  font-size: 54px; 
+  font-weight: 700; 
+  color:black;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+body {    
+  font-family: "Khula", sans-serif;
+  font-size: 10px;
+  min-height: 100vh;
+  margin: 0; 
+  padding: 0;
+  background-image: url(assets/img/background3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;    
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+} 
+
+  .nav-link {
+    padding: 0 20px;
+    line-height: 50px;    
+    font-size: 20px;    
+    font-weight:700;
+    color: #280A04;
+    text-decoration: none;
+    transition: color 1s;}
+
+  .nav-link:hover {color: #cabf25;}
+
+  .main-container {
+    display: flex;
+    flex-direction: row;     
+  }
+  
+  .main-left {
+    width: 30%;
+    background-image: url(assets/img/background-main.jpg);
+    background-size: cover;    
+    background-repeat: no-repeat;
+    border: 1px solid rgb(53, 49, 13);
+    color: white;    
+  }  
+
+  .main-right {
+    width: 70%;
+    background-color:rgb(255, 255, 255);
+    border: 3px solid rgb(53, 49, 13);
+    padding: 30px;
+  }
+
+  #summary {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section-title {
+    width: 100%;
+    border-bottom: 5px double black;
+  }
+
+  .part-summary {
+    width: 50%;
+  }
+
+  .section {    
+    padding: 0 30px;
+    font-size: 20px;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .funny-text {
+    background-image: url(assets/img/background-main.jpg);
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .funny-list {
+    border-left: 5px double black;
+  }
+
+  #projects, #english {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .text {
+    margin: 0;
+  }
+
+  .contact-link, .tel {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+  }
+  .contact-link:hover {
+    color: rgb(19, 8, 6);
+  }
+
+  .href-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+  }
+
+  .href-link:hover {
+    color: turquoise;
+  } 
+
+  .my-photo {
+    width: 100%;    
+  }
+
+  .container-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; 
+  }
+
+  .icon1 {
+    padding: 20px;
+    width: 100px;
+}
+
+.icon2 {
+  padding: 20px;
+  width: 200px;
+}
+
+  @media (max-width: 768px) {
+    .main-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .main-left {width: 100%;}
+    .main-right {width: 100%;}
+
+  } 
